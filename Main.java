@@ -12,7 +12,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         //System.out.println("Hello");
-        laubch(args);
+        launch(args);
     }
     
     public void start(Stage primaryStage) throws Exception {
@@ -22,7 +22,7 @@ public class Main extends Application {
         button.setText("Start");
 
         StackPane layout = new StackPane();
-        layout.getChrildren().add(button);
+        layout.getChildren().add(button);
 
         Scene scene = new Scene(layout, 300, 250);
         primaryStage.setScene(scene);
